@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--▼ Resources Link ▼-->
+    <link rel="stylesheet" href="resources/data/css/styling.css">
+    <!--▲ Resources Link ▲-->
+    
+    <!--▼ Vendors Link ▼-->
+    <link rel="stylesheet" href="vendors/data/css/grid.css">
+    <!--▲ Vendors Link ▲-->
+
+    <title>JavaScript Language Basics</title>
+
+</head>
+<body>
+    <h1>JavaScript Language Basics</h1>
+<section class="row">   <!--|◄ A Brief Introduction to JavaScript ▼|-->
+    <h2>Brief Introduction to JavaScript</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <img src="resources/footage/images/introduction.jpg" alt="Language Differences">
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>              <!--|◄ A Brief Introduction to JavaScript ▲|-->
+
+<section class="row">   <!--|◄ Variables & Data Types ▼|-->
+    <h2>Variables & Data Types</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var firstName = 'John';                      <br>
+            console.log(firstName);                     <br>
+                                                        <br>
+            var lastName = 'Smith';                     <br>
+            var age = 28;                               <br>
+                                                        <br>
+            var fullAge = true;                         <br>
+            console.log(fullAge);                       <br>
+                                                        <br>
+            var job; //◄ Undefined will be returned     <br>
+            console.log(job);                           <br>
+                                                        <br>
+            job = 'Teacher';                            <br>
+            console.log(job);                           <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <img src="resources/footage/images/variables_and_data_types.jpg" alt="Variables & Data Types">
+        <p>All variables should start with an Underscore (_), Dollar Sign ($) or a letter.</p>
+    </div>    
+    <div class="col span-1-of-10"></div>    
+</section>              <!--|◄ Variables & Data Types ▲|-->
+
+<section class="row">   <!--|◄ Variable Mutation & Type Coercion ▼|-->
+    <h2>Variable Mutation & Type Coercion</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>//--▼ Type Coercion ▼--//                                                                            <br>
+            var firstName = 'John';                                                                             <br>
+            var age = 28; //◄ This is a Number                                                                  <br>
+                                                                                                                <br>
+            console.log(firstName + '_' + age); //◄ "John_28" will be returned                                  <br>
+                                                                                                                <br>
+            var job, isMarried; //◄ Multiple Variables Assigned                                                 <br>
+            job = 'Teacher';                                                                                    <br>
+            isMarried = false;                                                                                  <br>
+            console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);     <br>
+            //▲ "John is a 28 year old Teacher. Is he married? false" - Will be returned                        <br>
+            //--▲ Type Coercion ▲--//                                                                           <br>
+                                                                                                                <br>
+            //--▼ Variable Mutation ▼--//                                                                       <br>
+            age = 'twenty eight'; //◄ This is a String                                                          <br>
+            job = 'driver';                                                                                     <br>
+                                                                                                                <br>
+            alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);           <br>
+            //▲ Note example will show the results of this alert                                                <br>
+                                                                                                                <br>
+            var lastName = prompt('what is his last name?');                                                    <br>
+            console.log(firstName + ' ' + lastName);                                                            <br>
+            //▲ Note example will show the results of this prompt                                               <br>
+            //--▲ Variable Mutation ▲--//                                                                       </p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>The plus (+) symbol is an operator.  <br>
+        JavaScript is case sensitive.           </p>
+        <br><h2>Alert</h2>
+        <img src="resources/footage/images/variable_mutation_alert.jpg" alt="Alert Command">
+        <br><h2>Prompt</h2>
+        <img src="resources/footage/images/variable_mutation_prompt.jpg" alt="Prompt Command">
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>              <!--|◄ Variable Mutation & Type Coercion ▲|-->
+
+<section class="row">   <!--|◄ Basic Operators ▼|-->
+    <h2>Basic Operators</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var now, yearJohn, yearMark; //◄ Sets Variables                      <br>
+            now = 2018; //◄ Defines current year                                <br>
+            ageJohn = 28; //◄ Defines John Age                                  <br>
+            ageMark = 33; //◄ Defines Mark Age                                  <br>
+            var x; //◄ Undefined                                                <br>
+                                                                                <br>
+            //--▼ Math Operators ▼--//                                          <br>
+            yearJohn = now - ageJohn;                                           <br>
+            //▲ Calculates when John was born                                   <br>
+                                                                                <br>
+            yearMark = now - ageMark;                                           <br>
+            //▲ Calculates when Mark was born                                   <br>
+                                                                                <br>
+            console.log(yearJohn);                                              <br>
+            console.log(yearMark);                                              <br>
+                                                                                <br>
+            console.log(now + 2)                                                <br>
+            //--▲ Math Operators ▲--//                                          <br>
+            //--▼ Logical Operators ▼--//                                       <br>
+            var johnOlder = ageJohn > ageMark;                                  <br>
+            console.log(johnOlder); //◄ Will return false                       <br>
+            //--▲ Logical Operators ▲--//                                       <br>
+            //--▼ Type of Operator ▼--//                                        <br>
+                                                                                <br>
+            console.log(typeof johnOlder); //◄ Boolean Variable                 <br>
+            //▲ This will tell the type of variable                             <br>
+            console.log(typeof ageJohn); //◄ Number Variable                    <br>
+            //▲ This will tell the type of variable                             <br>
+            console.log(typeof 'Mark is older than John'); //◄ String Variable  <br>
+            //▲ This will tell the type of variable                             <br>
+            console.log(typeof x); //◄ Undefined Variable                       <br>
+            //▲ This will tell the type of variable                             <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p></p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>              <!--|◄ Basic Operators ▲|-->
+
+<section class="row">   <!--|◄ Operator Precedence ▼|-->
+    <h2>Operator Precedence</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>//--▼ Multiple Operators ▼--//                                       <br>
+            var now = 2018;                                                     <br>
+            var yearJohn = 1989;                                                <br>
+            var fullAge = 18;                                                   <br>
+                                                                                <br>
+            var isFullAge = now - yearJohn >= fullAge;                          <br>
+            console.log(isFullAge); //◄ Will return true, boolean               <br>
+            //--▲ Multiple Operators ▲--//                                      <br>
+            //--▼ Grouping ▼--//                                                <br>
+            var ageJohn = now - yearJohn;                                       <br>       
+            var ageMark = 35;                                                   <br>       
+            var average = (ageJohn + ageMark) / 2; //◄ Will return 32, number   <br>
+            //▲ (...) has highest precedence                                    <br>        
+            console.log(average);                                               <br>       
+            //--▲ Grouping ▲--//                                                <br>
+            //--▼ Multiple Assignments ▼--//                                    <br>        
+            var x, y;                                                           <br>       
+            x = y = (3 + 5) * 4 - 6;                                            <br>        
+            console.log(x, y);//◄ Will return 26, number                        <br>        
+            //--▲ Multiple Assignments ▲--//                                    <br>
+            //--▼ More Operators ▼--//                                          <br>      
+            x *= 2;                                                             <br>     
+            console.log(x);//◄ Will return 52, number                           <br>       
+            x += 10;                                                            <br>        
+            console.log(x);//◄ Will return 62, number                           <br>       
+            x++;                                                                <br>        
+            //▲ Adds one unit to the operator                                   <br>       
+            console.log(x);//◄ Will return 63, number                           <br>       
+            //--▲ More Operators ▲--//                                          <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>Operator precedence determines how operators are parsed concerning each other. Operators with higher precedence become the operands of operators with lower precedence.</p>
+        <br> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank">Study Link</a> <br>
+        <p> According to the 'Operator Precedence'...                       <br>
+            ...(-) gets executed first (Operator Type = Assignment - #3)    <br>
+            then (>=) (Operator Type = Greater than or Equal - #12)         <br>
+            then the assignment operator, (=) (Operator Type = Assignment - #3) </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  		    <!--|◄ Operator Precedence ▲|-->
+
+<section class="row">   <!--|◄ Coding Challenge #1 ▼|-->
+    <h2>Coding Challenge #1</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var massMark = 78; // kg                                                 <br>
+            var heightMark = 1.69; // meters                                        <br>
+                                                                                    <br>
+            var massJohn = 92; // kg                                                <br>
+            var heightJohn = 1.92; // meters                                        <br>
+                                                                                    <br>
+            var BMIMark = massMark / (heightMark * heightMark);                     <br>
+            var BMIJohn = massJohn / (heightJohn * heightJohn);                     <br>
+            console.log(BMIMark, BMIJohn); //◄ Will return 27.309 & 24.956, number  <br>
+                                                                                    <br>
+            var MarkHigherBMI = BMIMark > BMIJohn;                                  <br>
+            console.log('Is Mark\'s BMI higher than John\'s? ' + MarkHigherBMI);     <br>
+            //▲ Will return Is Mark's BMI higher than John's? true, string & boolean <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>Mark and are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). <br>
+            Mass in kg and height in meter.                                                                                                                     <br>
+                                                                                                                                                                <br>
+            1. Store Mark's and John's mass and height in variables.                                                                                            <br>
+            2. Calculate both their BMI's                                                                                                                       <br>
+            3. Create a boolean variable containeing information about whether Mark has a higher BMI than John.                                                 <br>
+            4. Prin a string to the console contianing the variable from step 3. Something like "Is Mark's BMI higher than John's? true".                       <br>
+                                                                                                                                                                <br>
+            (\) Is an escape symbol you can use to ignore the next fuction of a symbol, look at code for example.
+        </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  		    <!--|◄ Coding Challenge #1 ▲|-->
+
+<section class="row">   <!--|◄ If/Else Statements ▼|-->
+    <h2>If/Else Statements</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var firstName = 'John';                                                                                      <br>
+            var civilStatus = 'single';//◄ civilStatus is 'single'                                                      <br>
+                if (civilStatus === 'married') {                                                                        <br>
+                    console.log(firstName + ' is married.');                                                            <br>
+                } else {                                                                                                <br>
+                    console.log(firstName + ' isn\'t married.');//◄ Will return, John isn't married.                    <br>
+                }                                                                                                       <br>
+                                                                                                                        <br>
+            var isMarried = true;                                                                                       <br>
+                if (isMarried) {                                                                                        <br>
+                    console.log(firstName + ' is married.');//◄ Will return, John is married.                           <br>
+                } else {                                                                                                <br>
+                    console.log(firstName + ' isn\'t married.');                                                        <br>
+                }                                                                                                       <br>
+                                                                                                                        <br>
+            //--▼ Coding Challenge #1 - If/Else Statements ▼--//                                                        <br>
+            var massMark = 78;                                                                                          <br>
+            var heightMark = 1.69;                                                                                      <br>
+                                                                                                                        <br>
+            var massJohn = 92;                                                                                          <br>
+            var heightJohn = 1.92;                                                                                      <br>
+            //▲ Changing these will affect the else statement                                                           <br>
+                                                                                                                        <br>
+            var BMIMark = massMark / (heightMark * heightMark);                                                         <br>
+            var BMIJohn = massJohn / (heightJohn * heightJohn);                                                         <br>
+                                                                                                                        <br>
+            if (BMIMark > BMIJohn) {                                                                                    <br>
+                console.log('Mark\'s BMI is higher than John\'s.');//◄ Will return, "Mark's BMI is hagher than John's." <br>
+            } else {                                                                                                    <br>
+                console.log('John\'s BMI is higher than Mark\'s.');                                                     <br>
+            }                                                                                                           <br>
+            //--▲ Coding Challenge #1 - If/Else Statements ▲--//                                                        <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <a href="https://codeahoy.com/javascript/2019/10/12/==-vs-===-in-javascript/" target="_blank">Study Link</a>
+        <p>The difference between == and === is that: == converts the variable values to the same type before performing comparison. This is called type coercion. <br>
+            === does not do any type conversion (coercion) and returns true only if both values and types are identical for the two variables being compared.</p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  		    <!--|◄ If/Else Statements ▲|-->
+
+<section class="row">   <!--|◄ Boolean Logic ▼|-->
+    <h2>Boolean Logic</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var firstName = "John";<br>
+            var age = 16;//◄ Changing this will affect the else statement                           <br>
+                                                                                                    <br>
+            if (age < 13) {                                                                         <br>
+                console.log(firstName + ' is a boy.');                                              <br>
+            } else if (age >= 13 && age < 20) {                                                     <br>
+                console.log(firstName + ' is a teenager.'); //◄ Will return this                    <br>
+            } else if (age >= 20 && age < 30) {                                                     <br>
+                console.log(firstName + ' is a young man.');                                        <br>
+            }                                                                                       <br>
+                else {                                                                              <br>
+                console.log(firstName + ' is a man.');                                              <br>
+            }                                                                                       <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <br><h2>Basic Boolean Logic</h2>
+        <img src="resources/footage/images/basic_boolean_logic.jpg" alt="Basic Boolean Logic">
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  		    <!--|◄ Boolean Logic ▲|-->
+
+<section class="row">   <!--|◄ The Ternary Operator & Switch Statements ▼|-->
+    <h2>The Ternary Operator & Switch Statements</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var firstName = 'John';                                                              <br>
+            var age = 16;                                                                       <br>
+            var job = 'teacher';                                                                <br>
+                                                                                                <br>
+            //--▼ Ternary Operator ▼--//                                                        <br>
+            age >= 18 ? console.log(firstName + ' drinks beer.')                                <br>
+            : console.log(firstName + ' drinks juice.'); //◄ Will return, "John drinks juice."  <br>
+                                                                                                <br>
+            var drink = age >= 18 ? 'beer' : 'juice';                                           <br>
+            console.log(drink);                                                                 <br>
+            //▲ Beer will be logged if age is 18 or more                                        <br>
+            //--▲ Ternary Operator ▲--//                                                        <br>
+                                                                                                <br>
+            //--▼ Switch Statement ▼--//                                                        <br>
+            switch (job) {                                                                      <br>
+                case 'teacher':                                                                 <br>
+                case 'instructor': //◄ Two possibilities assigned                               <br>
+                    console.log(firstName + ' teaches kids how to code.');                      <br>
+                    break; //◄ Will stop evaluating if job = 'teacher'                          <br>
+                case 'driver':                                                                  <br>
+                    console.log(firstName + ' drives an uber in Lisbon');                       <br>
+                    break;                                                                      <br>
+                case 'designer':                                                                <br>
+                    console.log(firstName + ' designs beautiful websites.');                    <br>
+                    break;                                                                      <br>
+                default:                                                                        <br>
+                    console.log(firstName + ' does something else.');                           <br>
+            }//▲ Example #1                                                                     <br>
+                                                                                                <br>
+            age = 56; //◄ Changing this affect the outcome                                      <br>
+            switch (true) {                                                                     <br>
+                case age < 13:                                                                  <br>
+                    console.log(firstName + ' is a boy.');                                      <br>
+                    break;                                                                      <br>
+                case age >=13 && age < 20:                                                      <br>
+                    console.log(firstName + ' is a teenager.');                                 <br>
+                    break;                                                                      <br>
+                case age >=20 && age < 30:                                                      <br>
+                    console.log(firstName + ' is a young man.');                                <br>
+                    break;                                                                      <br>
+                default:                                                                        <br>
+                    console.log(firstName + ' is a man.');                                      <br>
+            }//▲ Example #2                                                                     <br>
+            //--▲ Switch Statement ▲--//                                                        <br>
+                                                                                                <br>
+            //--▼ If/Else Statement (Recap) ▼--//                                               <br>
+            if (age >= 18){                                                                     <br>
+                var drink = 'beer';                                                             <br>
+            } else {                                                                            <br>
+                var drink = 'juice';                                                            <br>
+            }                                                                                   <br>
+            //--▲ If/Else Statement (Recap) ▲--//                                               <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>“Question mark” or “conditional” operator in JavaScript is a ternary operator that has three operands.<br>
+            The expression consists of three operands: the condition, value if true and value if false.<br>
+            The evaluation of the condition should result in either true/false or a boolean value.</p>
+            <br><br>
+        <a href="https://www.geeksforgeeks.org/ternary-operator-question-mark-and-colon-in-javascript/" target="_blank">Read More</a>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  		    <!--|◄ The Ternary Operator & Switch Statements ▲|-->
+
+<section class="row">   <!--|◄ Truthy and Falsy Values & Equality Operators ▼|-->
+    <h2>Truthy and Falsy Values & Equality Operators</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var height; //◄ Only Declaring it                                                    <br>
+                                                                                                <br>
+            height = 0;                                                                         <br>
+            //▲ 0 = Not defined unless you state otherwise in an 'if' statement, example below. <br>
+                                                                                                <br>
+            //▼ Look up 'Basic Boolean Logic'                                                   <br>
+            if (height || height === 0) {                                                       <br>
+                console.log('Variable is defined.');                                            <br>
+            } else {                                                                            <br>
+                console.log('Variable has not been defined.')                                   <br>
+            }//▲ This will be returned if it hasn't been defined, only declared.                <br>
+                                                                                                <br>
+            //--▼ Equality Operators ▼--//                                                      <br>
+            var equalityOperators = 23;//◄ Both must be 23 to return value                      <br>
+            if (equalityOperators == '23')//◄ Both must be 23 to return value                   <br>
+            console.log('The == operator compared the string to the number');                   <br>
+            //--▲ Equality Operators ▲--//                                                      <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>Falsy Values: Undefined, Null, 0, '', NaN    <br>
+        Truthy Values: Not Falsy Values                 <br><br>
+        Use the (===) rather than the (==) to avoid bugs.   </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  		    <!--|◄ Truthy and Falsy Values & Equality Operators ▲|-->
+
+<section class="row">   <!--|◄ Coding Challenge #2 ▼|-->
+    <h2>Coding Challenge #2</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var scoreJohn = (89 + 120 + 103) / 3;                                <br>
+            var scoreMike = (116 + 94 + 123) / 3;                               <br>
+            var scoreMary = (97 + 134 + 105) /3;                                <br>
+            console.log(scoreJohn, scoreMike, scoreMary);                       <br>
+                                                                                <br>
+            //--▼ Part #1 (Without Mary) ▼--//                                  <br>
+            if (scoreJohn > scoreMike) {                                        <br>
+                console.log('John\'s team wins with ' + scoreJohn + ' points'); <br>
+            } else if (scoreMike > scoreJohn) {                                 <br>
+                console.log('Mike\'s team wins with ' + scoreMike + ' points'); <br>
+            } else {                                                            <br>
+                console.log('There is a draw');                                 <br>
+            }                                                                   <br>
+            //--▲ Part #1 (Without Mary) ▲--//                                  <br>
+            //--▼ Part #2 (With Mary) ▼--//                                     <br>
+            if (scoreJohn > scoreMike && scoreJohn > scoreMary) {               <br>
+                console.log('John\'s team wins with ' + scoreJohn + ' points'); <br>
+            } else if (scoreMike > scoreJohn && scoreMike > scoreMary) {        <br>
+                console.log('Mike\'s team wins with ' + scoreMike + ' points'); <br>
+            } else if (scoreMary > scoreJohn && scoreMary > scoreMike) {        <br>
+                console.log('Mary\'s team wins with ' + scoreMary + ' points'); <br>
+            } else {                                                            <br>
+                console.log('There is a draw');                                 <br>
+            }                                                                   <br>
+            //--▲ Part #2 (With Mary) ▲--//                                     <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>John and Mike both play basketball in different teams.
+            In the latest 3 games, john's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
+            <br><br>
+            1. Calculate the average score for each team.<br><br>
+            2. Decide which team wins in average (Highest Average Score), and print the winner to the console.
+            Also include the average score in the output.<br><br>
+            3. Then change the scores to show different winners.
+            Don't forget to take into account there might be a draw. (The same average score)<br><br>
+            4. Extra: Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console.
+            Hint: You will need the && operator to make the decision.<br><br>
+            5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
+
+        </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Coding Challenge #2 ▲|-->
+
+<section class="row">   <!--|◄ Functions ▼|-->
+    <h2>Title</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>function calculateAge (birthYear) {                                                                          <br>
+            return 2020 - birthYear;                                                                                    <br>
+        }                                                                                                               <br>
+                                                                                                                        <br>
+        var ageJohn = calculateAge(1991); //◄ calculateAge is executed and returned as a number variable for ageJohn    <br>
+        var ageMike = calculateAge(1948);                                                                               <br>
+        var ageJane = calculateAge(1990);                                                                               <br>
+            console.log (ageJohn, ageMike, ageJane);                                                                    <br>
+                                                                                                                        <br>
+        function yearsUntilRetirement (year, firstName) {                                                               <br>
+            var age = calculateAge(year);                                                                               <br>
+            var retirement = 65 - age;                                                                                  <br>
+                                                                                                                        <br>
+            if (retirement > 0) {                                                                                       <br>
+                console.log(firstName + ' retires in ' + retirement + ' years.');                                       <br>
+            } else {                                                                                                    <br>
+                console.log(firstName + ' is already retired.');                                                        <br>
+            }                                                                                                           <br>
+        }                                                                                                               <br>
+                                                                                                                        <br>
+        yearsUntilRetirement(1990, 'John');                                                                             <br>
+        yearsUntilRetirement(1948, 'Mike');//◄ This will return -7, if else statement fixes this                        <br>
+        yearsUntilRetirement(1969, 'Jane');                                                                             <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p></p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Functions ▲|-->
+
+<section class="row">   <!--|◄ Function Statements and Expressions ▼|-->
+    <h2>Function Statements and Expressions</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>function functionDeclaration (job, firstName) {/*◄ Function Declaration*/}                                                                   <br>
+            var functionExpression = function(job, firstName) {/*◄ Function Expression*/}                                                               <br>
+                                                                                                                                                        <br>
+            var whatDoYouDo = function (job, firstName) {                                                                                               <br>
+                switch (job) {                                                                                                                          <br>
+                    case 'teacher':                                                                                                                     <br>
+                        return firstName + ' teaches kids how to code.'; //◄ No need to add a 'break;' because 'return' immediately ends the function   <br>
+                    case 'driver':                                                                                                                      <br>
+                        return firstName + ' drives a cab in Lisbon.';                                                                                  <br>
+                    case 'designer':                                                                                                                    <br>
+                        return firstName + ' designs beatiful websites.';                                                                               <br>
+                    default:                                                                                                                            <br>
+                        return firstName + ' does something else.';                                                                                     <br>
+                }                                                                                                                                       <br>
+            }                                                                                                                                           <br>
+                                                                                                                                                        <br>
+            console.log(whatDoYouDo('teacher', 'John')); //◄ Will return, "John teaches kids how to code."                                              <br>
+            console.log(whatDoYouDo('driver', 'Mark')); //◄ Will return, "Mark drives a cab in Lisbon."                                                 <br>
+            console.log(whatDoYouDo('designer', 'Mary')); //◄ Will return, "Mary designs beatiful websites."                                            <br>
+            console.log(whatDoYouDo('policeman', 'Peter')); //◄ Will return, "Peter does something else."                                               <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <a href="https://2ality.com/2012/09/expressions-vs-statements.html" target="_blank">Read More</a>
+        <p>Difference between 'Statements' and 'Expressions'.<br><br>
+        Expressions are pieces of code that always produce a value.<br><br>
+        Statements only perform actions: They do things without producing immediate results.<br>
+        Examples of Statements: if else, while loops or functions.</p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Function Statements and Expressions ▲|-->
+
+<section class="row">   <!--|◄ Arrays ▼|-->
+    <h2>Arrays</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>//--▼ Initialize New Array ▼--//                                                                                 <br>
+            var names = ['John', 'Mark', 'Jane'];//◄ Preferred                                                              <br>
+            var years = new Array (1990, 1969, 1948);//◄ Not Preferred                                                      <br>
+                                                                                                                            <br>
+            console.log(names); //◄ Will return, Array(3) [ "John", "Mark", "Jane" ]                                        <br>
+            console.log(names[0]); //◄ Will return, John                                                                    <br>
+            console.log(names[1]); //◄ Will return, Mark                                                                    <br>
+            console.log(names[2]); //◄ Will return, Jane                                                                    <br>
+            console.log(names.length);                                                                                      <br>
+            //▲ Will return 3, because there are 3 elements in the array                                                    <br>
+            //--▲ Initialize New Array ▲--//                                                                                <br>
+                                                                                                                            <br>
+            //--▼ Mutate Array Data ▼--//                                                                                   <br>
+            names[1] = 'Ben';                                                                                               <br>
+            //▲ Will replace array 1 'Mark' with 'Ben' and return, Array(3) [ "John", "Ben", "Jane" ]                       <br>
+            names[5] = 'Mary'; //◄ Will return, Array(6) [ "John", "Ben", "Jane", <2 empty slots>, "Mary" ]                 <br>
+            //▼ names[names.length] = 'Mary';                                                                               <br>
+            //▲ Will return, Array(4) [ "John", "Ben", "Jane", "Mary" ], if (names[5] = 'Mary';) is inactive                <br>
+            console.log(names);                                                                                             <br>
+            //--▲ Mutate Array Data ▲--//                                                                                   <br>
+                                                                                                                            <br>
+            console.log(years); //◄ Will return, Array(3) [ 1990, 1969, 1948 ]                                              <br>
+            console.log(years[0]); //◄ Will return, 1990                                                                    <br>
+            console.log(years[1]); //◄ Will return, 1969                                                                    <br>
+            console.log(years[2]); //◄ Will return, 1948                                                                    <br>
+                                                                                                                            <br>
+            //--▼ Different Data Types ▼--//                                                                                <br>
+            var john = ['John', 'Smith', 1990, 'teacher', false];                                                           <br>
+                                                                                                                            <br>
+            john.push('blue'); //◄ The .push fucntion will add blue at the end of the array                                 <br>
+            console.log(john);                                                                                              <br>
+            //▲ Will return, Array(6) [ "John", "Smith", 1990, "teacher", false, "blue" ]                                   <br>
+            john.unshift('Mr.');//◄ The .unshift fucntion will add Mr. to the start of the array                            <br>
+            console.log(john);                                                                                              <br>
+            //▲ Will return, Array(7) [ "Mr.", "John", "Smith", 1990, "teacher", false, "blue" ]                            <br>
+                                                                                                                            <br>
+            john.pop(); //◄ The .pop function will remove the last element of the array                                     <br>
+            john.pop(); //◄ Will remove 'false'                                                                             <br>
+            console.log(john);                                                                                              <br>
+            //▲ Will return, Array(7) [ "Mr.", "John", "Smith", 1990, "teacher" ]                                           <br>
+                                                                                                                            <br>
+            john.shift(); //◄ The .shift function will remove the first element of the array                                <br>
+            john.shift(); //◄ Will remove 'John'                                                                            <br>
+            console.log(john);                                                                                              <br>
+            //▲ Array(3) [ "Smith", 1990, "teacher" ]. Please note that the .pop functions still affects the return results <br>
+            console.log(john.indexOf(1990)); //◄ Will return, 1. Look at above example ▲                                    <br>
+            //▲ Will return the position of the argument that you pass inside of this array                                 <br>
+            console.log(john.indexOf(23)); //◄ Will return, -1, because the number isn't present in the array               <br>
+                                                                                                                            <br>
+            var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';             <br>
+            console.log(isDesigner);                                                                                        <br>
+            //▲ Will return, John is not a designer, unless you change 'teacher' to 'designer' in the array variable        <br>
+            //--▲ Different Data Types ▲--//                                                                                <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>Arrays are 0 based, meaning the first item starts counting at zero.      <br>
+            Imagine it like this, when a baby is born then they're not 1 year old.  <br>
+        </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Arrays ▲|-->
+
+<section class="row">   <!--|◄ Coding Challenge #3 ▼|-->
+    <h2>Coding Challenge #3</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>function tipCalculator(bill) { //◄ tipCalculator is the name of the function                             <br>
+            var percentage; //◄ percentage is the name which will have interchangeable values within the function   <br>
+        //▼ This function (tipCalculator) is using an if else statement                                             <br>
+            if (bill < 50) {                                                                                        <br>
+                percentage = .2;                                                                                    <br>
+            } else if (bill >= 50 && bill < 200){                                                                   <br>
+                percentage = .15;                                                                                   <br>
+            } else {                                                                                                <br>
+                percentage = .1;                                                                                    <br>
+            } return percentage * bill;                                                                             <br>
+        }                                                                                                           <br>
+        console.log(tipCalculator(300));//◄ Will return, 30                                                         <br>
+                                                                                                                    <br>
+        var bills = [124, 48, 268];//◄ This is an array called 'bills'                                              <br>
+        //▼ Setting a variable for 'tips'                                                                           <br>
+        var tips =  [tipCalculator(bills[0]),//◄ Applying the function (tipCalculator) to each [array]              <br>
+                    tipCalculator(bills[1]),                                                                        <br>
+                    tipCalculator(bills[2])];                                                                       <br>
+        var finalValues =   [bills[0] + tips[0],                                                                    <br>
+                            bills[1] + tips[1],                                                                     <br>
+                            bills[2] + tips[2]];                                                                    <br>
+                                                                                                                    <br>
+        console.log(tips, finalValues);                                                                             <br>
+        //▲ Will return, Array(3) [ 18.599999999999998, 9.600000000000001, 26.8 ]                                   <br>
+        //▲ Will return, Array(3) [ 142.6, 57.6, 294.8 ]                                                            <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>John and his family went on a holiday and went to 3 different restaurants. The bills were $124, $48 and $268.    <br>
+                                                                                                                            <br>
+        To tip the waiter a fair amount, John created a simple tip calculator (As a Function).
+        He likes to tip 20% of the bill when the bills is less than $50, 15% when the bill is between $50 and $200, and 10% if the bill is more than $200.  <br>
+                                                                                                                                                            <br>
+        In the end, John would like to have 2 arrays:                                                                                                       <br>
+        1) Containing all three tips (One for each bill)                                                                                                    <br>
+        2) Containing all three final paid amounts (bill + tip)                                                                                             <br>
+                                                                                                                                                            <br>
+        Note: To calculate 20% of a value, simply multiply if with 20/100 = 0.2
+        </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Coding Challenge #3 ▲|-->
+
+<section class="row">   <!--|◄ Objects and Properties ▼|-->
+    <h2>Objects and Properties</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var john = {                                                                 <br>
+            firstName: 'John',                                                          <br>
+            lastName: 'Smith',                                                          <br>
+            birthYear: 1990,                                                            <br>
+            family: ['Jane', 'Mark', 'Bob', 'Emily'],                                   <br>
+            job: 'teacher',                                                             <br>
+            isMarried: false                                                            <br>
+        };//▲ This is the john object                                                   <br>
+        console.log(john.firstName); //◄ Will return, John                              <br>
+        console.log(john['lastName']); //◄ Will return, Smith                           <br>
+                                                                                        <br>
+        var x = 'birthYear';                                                            <br>
+        console.log(john[x]);//◄ Will return, 1990                                      <br>
+                                                                                        <br>
+        john.job = 'designer';                                                          <br>
+        john['isMarried'] = true;                                                       <br>
+        //▲ This changes the values of the john object                                  <br>
+        console.log(john);                                                              <br>
+                                                                                        <br>
+        //--▼ New Object Syntax ▼--//                                                   <br>
+        var jane = new Object();                                                        <br>
+        jane.name = 'Jane';                                                             <br>
+        jane.birthYear = 1969;                                                          <br>
+        jane['lastName'] = 'Smith';                                                     <br>
+        console.log(jane);                                                              <br>
+        //▲ Will return, Object { name: "Jane", birthYear: 1969, lastName: "Smith" }    <br>
+        //--▲ New Object Syntax ▲--//                                                   <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>The difference between arrays and objects is that in arrays the order matters, while in objects it doesn't.<br>
+        <br>
+        Arrays = [ ]<br>
+        Objects = { }</p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Objects and Properties ▲|-->
+
+<section class="row">   <!--|◄ Objects and Methods ▼|-->
+    <h2>Objects and Methods</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var john = {                                                                             <br>
+            firstName: 'John',                                                                      <br>
+            lastName: 'Smith',                                                                      <br>
+            birthYear: 1991,                                                                        <br>
+            family: ['Jane', 'Mark', 'Bob', 'Emily'],                                               <br>
+            job: 'teacher',                                                                         <br>
+            isMarried: false,                                                                       <br>
+            calculateAge: function(birthYear) {                                                     <br>
+                this.age = 2020 - this.birthYear;                                                   <br>
+            }//▲ adding (this.) to the function tells the computer to reference within the object   <br>
+        };//▲ This is the john object                                                               <br>
+        john.calculateAge();                                                                        <br>
+        console.log(john);                                                                          <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p></p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Objects and Methods ▲|-->
+
+<section class="row">   <!--|◄ Coding Challenge #4 ▼|-->
+    <h2>Coding Challenge #4</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>var john = {                                                         <br>
+            fullName: 'John Smith',                                             <br>
+            mass: 92,                                                           <br>
+            height: 1.95,                                                       <br>
+            calculateBMI: function() {                                          <br>
+                this.bmi = this.mass / (this.height * this.height);             <br>
+                return this.bmi;                                                <br>
+            }                                                                   <br>
+        }                                                                       <br>
+        var mark = {                                                            <br>
+            fullName: 'Mark Miller',                                            <br>
+            mass: 70,                                                           <br>
+            height: 1.75,                                                       <br>
+            calculateBMI: function() {                                          <br>
+                this.bmi = this.mass / (this.height * this.height);             <br>
+                return this.bmi;                                                <br>
+            }                                                                   <br>
+        }                                                                       <br>
+                                                                                <br>
+        john.calculateBMI();                                                    <br>
+        mark.calculateBMI();                                                    <br>
+        console.log(john, mark);                                                <br>
+                                                                                <br>
+        //▼ The logs for calculateBMI are incorporated into the if statement    <br>
+        if (john.calculateBMI() > mark.calculateBMI()) {                        <br>
+            console.log(john.fullName + ' has a higher BMI of ' + john.bmi)     <br>
+        } else if (mark.bmi > john.bmi) {                                       <br>
+            console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi)     <br>
+        } else {                                                                <br>
+            console.log('They have the same BMI')                               <br>
+        }                                                                       <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>Let's remember the first coding challenge where Mark and John compared their BMI's. Let's now imprment the same functionality with objects and methods.  <br>
+                                                                                                                                                                    <br>
+        1. For each of them, create an object with properties for their full name, mass, and height.<br>
+        2. Then, add a method to each object to calculate the BMI. Save the BMI to the object and also return it from the method. <br>
+        3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI. <br>
+        <br>
+        Remember: BMI = mass / height^2 = mass / (height * height) - Mass in kg and height in meter.
+        </p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Coding Challenge #4 ▲|-->
+
+<section class="row">   <!--|◄ Loops and Iteration ▼|-->
+    <h2>Loops and Iteration</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>//--▼ For Loop ▼--//                                                                                     <br>
+            //--▼ Refer to notes ►--//                                                                              <br>
+            for (var i  = 0; i < 10; i++) {                                                                         <br>
+                console.log(i);                                                                                     <br>
+            }//▲ i will be logged until it's no longer < 10                                                         <br>
+                                                                                                                    <br>
+            console.log('----------------------------------')                                                       <br>
+                                                                                                                    <br>
+            for (var i = 1; i <= 20; i += 2) {                                                                      <br>
+                console.log(i);                                                                                     <br>
+            }//▲ i will be logged until it's no longer <= 20 and add 2 after every log                              <br>
+            //--▲ Refer to notes ►--//                                                                              <br>
+                                                                                                                    <br>
+            var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];                                          <br>
+            for (var i = 0; i < 5; i++) {                                                                           <br>
+                console.log(john[i]);                                                                               <br>
+            }                                                                                                       <br>
+            // John                                                                                                 <br>
+            // Smith                                                                                                <br>
+            // 1990                                                                                                 <br>
+            // designer                                                                                             <br>
+            // false                                                                                                <br>
+            //▲ Will be returned, unless you change (i < 5) to (i < john.length) then 'blue' will also be returned  <br>
+            //--▲ For Loop ▲--//                                                                                    <br>
+                                                                                                                    <br>
+            //--▼ While Loop ▼--//                                                                                  <br>
+            var i = 0;                                                                                              <br>
+            while(i < john.length) {                                                                                <br>
+                console.log(john[i]);                                                                               <br>
+                i++;                                                                                                <br>
+            }                                                                                                       <br>
+            //▲ Careful, this will slow down your computer: Continue and Break Statements fixes this.               <br>
+            //--▲ While Loop ▲--//                                                                                  <br>
+                                                                                                                    <br>
+            //--▼ Continue Statement ▼--//                                                                          <br>
+            var mark = ['Mark', 'Miller', 1991, 'editor', false, 'red'];                                            <br>
+            for (var i = 0; i < mark.length; i++) {                                                                 <br>
+                if (typeof mark[i] !== 'string') continue;                                                          <br>
+                console.log(mark[i]);                                                                               <br>
+            }                                                                                                       <br>
+            // Mark                                                                                                 <br>
+            // Miller                                                                                               <br>
+            // editor                                                                                               <br>
+            // red                                                                                                  <br>
+            //▲ Will be returned, it skipped the 1991 (Number) and false (Boolean) because it's different than a string <br>
+            //--▲ Continue Statement ▲--//                                                                              <br>
+                                                                                                                        <br>
+            //--▼ Break Statement ▼--//                                                                                 <br>
+            var mark = ['Mark', 'Miller', 1991, 'editor', false, 'red'];                                                <br>
+            for (var i = 0; i < mark.length; i++) {                                                                     <br>
+                if (typeof mark[i] !== 'string') break;                                                                 <br>
+                console.log(mark[i]);                                                                                   <br>
+            }                                                                                                           <br>
+            // Mark                                                                                                     <br>
+            // Miller                                                                                                   <br>
+            //▲ Will be returned, it skipped the rest because it was told to break the loop at the first item that isn't a string   <br>
+            //--▲ Break Statement ▲--//                                                                                             <br>
+                                                                                                                                    <br>
+            //--▼ Looping Backwards ▼--//                                                                                           <br>
+            for (var i = john.length - 1; i >= 0; i--) {                                                                            <br>
+                console.log(john[i]);                                                                                               <br>
+            }                                                                                                                       <br>
+            // blue                                                                                                                 <br>
+            // false                                                                                                                <br>
+            // designer                                                                                                             <br>
+            // 1990                                                                                                                 <br>
+            // Smith                                                                                                                <br>
+            // John                                                                                                                 <br>
+            //▲ Will be returned                                                                                                    <br>
+            //--▲ Looping Backwards ▲--//                                                                                           <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <h2>Loop Statement</h2>
+        <img src="resources/footage/images/loop_log.jpg" alt="Loop Statement">
+        <p>//▼ Array                                                    <br>
+            var john = ['John', 'Smith', 1990, 'designer', false];      <br>
+            console.log(john[0]);                                       <br>
+            console.log(john[1]);                                       <br>
+            console.log(john[2]);                                       <br>
+            console.log(john[3]);                                       <br>
+            console.log(john[4]);                                       <br>
+            //▲ Use loop statements instead, this is clunky coding    <br></p>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Loops and Iteration ▲|-->
+
+<section class="row">   <!--|◄ Coding Challenge #5 ▼|-->
+    <h2>Coding Challenge #5</h2>
+    <div class="col span-1-of-10"></div>
+    <div class="code col span-4-of-10">
+        <h3>▼ Code ▼</h3>
+        <p>//--▼ My Attempt ▼--//                                                                                   <br>
+            //► My mind went blank when trying to figure this out ◄//                                               <br>
+            //► You still have a lot to learn, #blessed ◄//                                                         <br>
+            //--▲ My Attempt ▲--//                                                                                  <br>
+                                                                                                                    <br>
+            //--▼ Solution - Part #1 ▼--//                                                                          <br>
+            var john = {                                                                                            <br>
+                fullName: 'John Smith',                                                                             <br>
+                bills: [124, 48, 268, 180, 42],                                                                     <br>
+                calcTips: function() {                                                                              <br>
+                    this.tips = [];                                                                                 <br>
+                    this.finalValues = [];                                                                          <br>
+                                                                                                                    <br>
+                    for (var i = 0; i < this.bills.length; i++)                                                     <br>
+                    {                                                                                               <br>
+                        //▼ Determine percentage based on tipping rules                                             <br>
+                        var percentage;                                                                             <br>
+                        var bill = this.bills[i];                                                                   <br>
+                                                                                                                    <br>
+                        if (bill < 50[i] < 50) {                                                                    <br>
+                            percentage = .2;                                                                        <br>
+                        } else if (bill  >= 50 && bill < 200) {                                                     <br>
+                            percentage = .15;                                                                       <br>
+                        } else {                                                                                    <br>
+                            percentage = .1;                                                                        <br>
+                        }                                                                                           <br>
+                                                                                                                    <br>
+                        //▼ Add results to the corresponding arrays                                                 <br>
+                        this.tips[i] = bill * percentage;                                                           <br>
+                        this.finalValues[i] = bill + bill * percentage;                                             <br>
+                    }                                                                                               <br>
+                }                                                                                                   <br>
+            }                                                                                                       <br>
+            //--▲ Solution - Part #1 ▲--//                                                                          <br>
+                                                                                                                    <br>
+            //--▼ Solution - Part #2 ▼--//                                                                          <br>
+            var mark = {                                                                                            <br>
+                fullName: 'Mark Miller',                                                                            <br>
+                bills: [77, 475, 110, 45],                                                                          <br>
+                calcTips: function() {                                                                              <br>
+                    this.tips = [];                                                                                 <br>
+                    this.finalValues = [];                                                                          <br>
+                                                                                                                    <br>
+                    for (var i = 0; i < this.bills.length; i++)                                                     <br>
+                    {                                                                                               <br>
+                        //▼ Determine percentage based on tipping rules                                             <br>
+                        var percentage;                                                                             <br>
+                        var bill = this.bills[i];                                                                   <br>
+                                                                                                                    <br>
+                        if (bill < 100[i] < 50) {                                                                   <br>
+                            percentage = .2;                                                                        <br>
+                        } else if (bill  >= 100 && bill < 300) {                                                    <br>
+                            percentage = .1;                                                                        <br>
+                        } else {                                                                                    <br>
+                            percentage = .25;                                                                       <br>
+                        }                                                                                           <br>
+                                                                                                                    <br>
+                        //▼ Add results to the corresponding arrays                                                 <br>
+                        this.tips[i] = bill * percentage;                                                           <br>
+                        this.finalValues[i] = bill + bill * percentage;                                             <br>
+                    }                                                                                               <br>
+                }                                                                                                   <br>
+            }                                                                                                       <br>
+            function calcAverage(tips) {                                                                            <br>
+                var sum = 0;                                                                                        <br>
+                for (var i = 0; i < tips.length; i++) {                                                             <br>
+                    sum = sum + tips[i];                                                                            <br>
+                }                                                                                                   <br>
+                return sum / tips.length;                                                                           <br>
+            }                                                                                                       <br>
+                                                                                                                    <br>
+            john.calcTips();                                                                                        <br>
+            mark.calcTips();                                                                                        <br>
+            console.log(mark, john);                                                                                <br>
+                                                                                                                    <br>
+            john.average = calcAverage(john.tips);                                                                  <br>
+            mark.average = calcAverage(mark.tips);                                                                  <br>
+            console.log(john, mark);                                                                                <br>
+                                                                                                                    <br>
+            if (john.average > mark.average) {                                                                      <br>
+                console.log(john.fullName + '\'s family pays higher tips, with an average of $' + john.average);    <br>
+            } else if (mark.average > john.average) {                                                               <br>
+                console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);    <br>
+            }                                                                                                       <br>
+            //--▲ Solution - Part #2 ▲--//                                                                          <br></p>
+    </div>
+    <div class="notes col span-4-of-10">
+        <h3>▼ Notes ▼</h3>
+        <p>Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!<br>
+        <br>
+        This time, John and his family went to 5 different restaurants. The bills were $124, $48, $268, $180 and $42.<br>
+        John likes to tip 20% of the bill when the bill is less than $50, 15% when the bill is between $50 and $200, and 10% if the bill is more than $200.<br>
+        <br>
+        Implement a tip calculator using objects and loops:<br>
+        1. Create an object with an array for the bill values. <br>
+        2. Add a method to calculate the tip.<br>
+        3. This method should include a loop to iterate over all the paid bills and do the tip calculations. <br>
+        4. As an output, create 1) A new array containing all tips, and 2) An array containing final paid amouts (Bill + Tip).<br>
+        Hint: start with two empty arrays [ ] as properties and then fill them up in the loop.<br>
+        Extra after finishing: Mark's family also went on a holiday, going to 4 different restaurants. The bills were $77, $375, $110 and $45.<br>
+        Makr likes to tip 20% of the bill when the bill is less than $100, 10% when the bill is between $100 and $300, and 25% if the bill is more than $300 (Different than John)<br>
+        <br>
+        5. Implement the same functionality as before, this time using Mark's tipping rules.<br>
+        6. Create a function (Not a method) to calculate the average of a given array of tips.<br>
+        Hint: Loop over the array, and in each iteration store the current sum in a variable (Starting from 0). After you have the sum of the array, divide it by the number of elements in it (That's how you calculate the average).<br>
+        7. Calculate the average tip for each family.<br>
+        8. Log to the console which family paid the highest tips on average.</p>
+
+        <br> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank">Operator Precedence</a> <br>
+    </div>    
+    <div class="col span-1-of-10"></div>
+</section>  			<!--|◄ Coding Challenge #5 ▲|-->
+
+</body>
+
+<!--▼ Vendors Link ▼-->
+<!--▲ Vendors Link ▲-->
+
+<!--▼ Resources Link ▼-->
+<script src="resources/data/js/script.js"></script><!--◄ Script Link ◄-->            
+<!--▲ Resources Link ▲-->
+</html>

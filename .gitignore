@@ -1,0 +1,15 @@
+node_modules
+vendors
+package-lock.json
+package.json
+
+.cache
+
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.gif
+*.pdf
+*.txt
+*.xd

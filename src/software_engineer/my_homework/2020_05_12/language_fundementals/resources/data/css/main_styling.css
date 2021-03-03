@@ -1,0 +1,135 @@
+:root{
+/* Design Colors */
+   --DairyCream:#F9E5BC;
+   --IndianKhaki:#C7AB8A;
+   --Leather:#967259;
+/* Design Colors */
+    
+/* Generic Colors */    
+   --Black:#000000;
+   --White:#FFFFFF;
+
+   --Green: #01b700;
+   --Pistachio: #83CE01;
+   --Yellow: #FFFA00;
+   --Supernova: #FFCF00;
+   --WebOrange: #FFA600;
+   --FlushOrange: #FF7D01;
+   --Scarlet: #FF2000;
+   --PersianRose: #F62394;
+   --PurpleHeart: #8B20BB;
+   --InternationalKleinBlue: #0024BA;
+   --Lochmara: #007AC7;
+   --Cerulean: #00B3D4;
+/* Generic Colors */
+}
+/*--▼ Global Settings ▼--*/
+*{
+ /* margin: Top Right Bottom Left; */
+    margin: 0 0 0 0;
+ /* padding: Top Right Bottom Left; */
+    padding: 0 0 0 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+}
+/*--▲ Global Settings ▲--*/
+/*--▼ Color Tags ▼--*/
+.green{
+    color: var(--Green);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+.green-no-padding{
+    color: var(--Green);
+    font-weight: 600;
+    font-size: 18px;
+}
+.yellow{
+    color: var(--Yellow);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+.orange{
+    color: var(--FlushOrange);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+.red{
+    color: var(--Scarlet);
+    font-weight: 600;
+    font-size: 18px;
+    /* padding: 0 0 2rem 2rem; */
+}
+.purple{
+    color: var(--PurpleHeart);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+.blue{
+    color: var(--InternationalKleinBlue);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+.blue-no-padding{
+    color: var(--InternationalKleinBlue);
+    font-weight: 600;
+    font-size: 18px;
+}
+.light-blue{
+    color: var(--Cerulean);
+}
+.grey{
+    color: grey;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+.black{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 2rem 2rem;
+}
+/*--▲ Color Tags ▲--*/
+
+h1{
+    text-align: center;
+    padding: 2rem;
+    color: var(--Leather);
+}
+
+h2{
+    text-align: left;
+    padding: 2rem;
+    color: var(--Leather);
+}
+
+p{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 0 2rem;
+}
+.overlap{
+    width: 100%;
+}
+.shrink{
+    width: 50%;
+}
+.section-border{
+    border: 4px solid var(--IndianKhaki);
+    margin: 6rem;
+}
+
+
+
+
+
+
+/*--▼ Seperation Example ▼--*/
+/*--▲ Seperation Example ▲--*/
