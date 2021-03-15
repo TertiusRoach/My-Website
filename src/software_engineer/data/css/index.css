@@ -1,0 +1,31 @@
+:root {
+  /*--▼ Design Colors ▼--*/
+  --Black: #000000; /*--► rgba(0, 0, 0, 1) ◄--*/
+  --White: #ffffff; /*--► rgba(255, 255, 255, 1) ◄--*/
+
+  --DairyCream: #f9e5bc; /*--► rgba(249, 229, 188, 1) ◄--*/
+  --IndianKhaki: #c7ab8a; /*--► rgba(199, 171, 138, 1) ◄--*/
+  --Leather: #967259; /*--► rgba(150, 114, 89, 1) ◄--*/
+
+  --OuterSpace: #1e2d2f; /*--► rgba(30, 45, 47, 1) ◄--*/
+  --BlackPearl: #041f1e; /*--► rgba(4, 31, 30, 1) ◄--*/
+
+  --CornflowerBlue: #6f9ceb; /*--► rgba(111, 156, 235, 1) ◄--*/
+  --JordyBlue: #98b9f2; /*--► rgba(152, 185, 242, 1) ◄--*/
+  /*--▲ Design Colors ▲--*/
+}
+
+/*--|▼| Global Styling |▼|--*/
+* {
+  font-family: 'Mitr', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+/*--|▲| Global Styling |▲|--*/
+
+/*--|▼| Description |▼|--*/
+/*--|▲| Description |▲|--*/
+
+/*--▼ Note to Self ▼--*/
+/*--► Note to Self ◄--*/
