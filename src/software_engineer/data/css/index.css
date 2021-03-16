@@ -19,10 +19,77 @@
 * {
   font-family: 'Mitr', Helvetica, Arial, sans-serif;
   font-weight: 400;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 /*--|▲| Global Styling |▲|--*/
+/*--|▼| Grid Index |▼|--*/
+body {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+  grid-template-rows:/*► 01 ►*/
+    40px
+    /*► 02 ►*/ 1fr
+    /*► 03 ►*/ 1fr
+    /*► 04 ►*/ 1fr
+    /*► 05 ►*/ 1fr
+    /*► 06 ►*/ 1fr
+    /*► 07 ►*/ 1fr
+    /*► 08 ►*/ 1fr
+    /*► 09 ►*/ 1fr
+    /*► 10 ►*/ 1fr
+    /*► 11 ►*/ 1fr
+    /*► 12 ►*/ 1fr
+    /*► 13 ►*/ 1fr
+    /*► 14 ►*/ 1fr
+    /*► 15 ►*/ 1fr
+    /*► 16 ►*/ 1fr
+    /*► 17 ►*/ 1fr
+    /*► 18 ►*/ 1fr
+    /*► 19 ►*/ 1fr
+    /*► 20 ►*/ 1fr
+    /*► 21 ►*/ 1fr
+    /*► 22 ►*/ 40px;
+}
+/*--|▲| Grid Index |▲|--*/
+/*--|▼| Software Engineer Page |▼|--*/
+#header {
+  width: 100vw;
+  margin: 10px 0;
+  /* height: 40px; */
+}
+#inner-header {
+  height: 100%;
+  margin: 0 auto;
+}
+#navigation {
+  display: flex;
+  justify-content: space-around;
+  color: var(--Leather);
+}
+#navigation li:hover {
+  transition: 0.15s;
+  color: var(--JordyBlue);
+  cursor: pointer;
+}
+.align-horizontally {
+  display: flex;
+}
+.align-horizontally i {
+  margin: 0 5px 0 0;
+}
+
+.background {
+  position: fixed;
+  z-index: -5;
+  opacity: 0.25;
+  height: 100vh;
+  width: 100vw;
+}
+/*--|▲| Software Engineer Page |▲|--*/
 
 /*--|▼| Description |▼|--*/
 /*--|▲| Description |▲|--*/

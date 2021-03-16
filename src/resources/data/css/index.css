@@ -23,7 +23,7 @@
   margin: 0;
 }
 /*--|▲| Global Styling |▲|--*/
-/*--▼ Grid Index ▼--*/
+/*--|▼| Grid Index |▼|--*/
 body {
   display: grid;
   height: 100vh;
@@ -53,8 +53,8 @@ body {
     /*► 21 ►*/ 1fr
     /*► 22 ►*/ 40px;
 }
-/*--▲ Grid Index ▲--*/
-/*--▼ Index Page ▼--*/
+/*--|▲| Grid Index |▲|--*/
+/*--|▼| Index Page |▼|--*/
 a {
   text-decoration: none; /* No underline */
   color: inherit;
@@ -146,7 +146,7 @@ a:hover {
   width: 268px;
   border: 3px solid var(--JordyBlue);
 }
-/*--▲ Index Page ▲--*/
+/*--|▲| Index Page |▲|--*/
 
 /*--|▼| Description |▼|--*/
 /*--|▲| Description |▲|--*/
