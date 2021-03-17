@@ -55,15 +55,11 @@ body {
     /*► 22 ►*/ 40px;
 }
 /*--|▲| Grid Index |▲|--*/
-/*--|▼| Software Engineer Page |▼|--*/
+/*--|▼| Index (Software Engineer) |▼|--*/
 #header {
   width: 100vw;
-  margin: 10px 0;
-  /* height: 40px; */
-}
-#inner-header {
-  height: 100%;
-  margin: 0 auto;
+  margin: 10px 0 0 0;
+  height: 30px;
 }
 #navigation {
   display: flex;
@@ -81,7 +77,12 @@ body {
 .align-horizontally i {
   margin: 0 5px 0 0;
 }
-
+#portfolio {
+  grid-column: 3/11;
+  grid-row: 2/21;
+  width: 100%;
+  height: 100%;
+}
 .background {
   position: fixed;
   z-index: -5;
@@ -89,7 +90,40 @@ body {
   height: 100vh;
   width: 100vw;
 }
-/*--|▲| Software Engineer Page |▲|--*/
+/*--|▲| Index (Software Engineer) |▲|--*/
+/*--|▼| Portfolio (Software Engineer) |▼|--*/
+.underline {
+  width: 0;
+  height: 0;
+  margin: -10px 0 0 0;
+  border: 3px solid var(--Leather);
+  transition: 2s ease, border 2s ease;
+}
+.active-list h1 {
+  color: var(--JordyBlue);
+  cursor: default;
+}
+
+.portfolio-all:hover .underline,
+.active-list :is(.portfolio-all .underline) {
+  width: 33px;
+  color: var(--JordyBlue);
+  border: 3px solid var(--JordyBlue);
+}
+.portfolio-html:hover .underline,
+.active-list :is(.portfolio-html .underline) {
+  width: 183px;
+  color: var(--JordyBlue);
+  border: 3px solid var(--JordyBlue);
+}
+.portfolio-javascript:hover .underline,
+.active-list :is(.portfolio-javascript .underline) {
+  width: 156px;
+  color: var(--JordyBlue);
+  border: 3px solid var(--JordyBlue);
+}
+
+/*--|▲| Portfolio (Software Engineer) |▲|--*/
 
 /*--|▼| Description |▼|--*/
 /*--|▲| Description |▲|--*/
